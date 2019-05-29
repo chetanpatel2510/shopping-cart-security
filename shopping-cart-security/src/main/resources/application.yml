@@ -1,0 +1,18 @@
+server:
+  port: 9000
+security:
+  jwt:
+    key-store: classpath:mykeystore.jks
+    key-store-password: ChetanPatel1@
+    key-pair-alias: servercert
+    key-pair-password: ChetanPatel1@
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    org.springframework.security: DEBUG  
